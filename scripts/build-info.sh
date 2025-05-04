@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh for about the DLL
 
 CC=$1
 
@@ -24,7 +24,7 @@ if out=$($CC -dumpmachine); then
     build_target=$out
 fi
 
-echo "int LLAMA_BUILD_NUMBER = ${build_number};"
-echo "char const *LLAMA_COMMIT = \"${build_commit}\";"
-echo "char const *LLAMA_COMPILER = \"${build_compiler}\";"
-echo "char const *LLAMA_BUILD_TARGET = \"${build_target}\";"
+$echo "int LLAMA_BUILD_NUMBER = ${build_number};"
+$echo "char const *LLAMA_COMMIT = \"${build_commit}\";"
+$echo "char const *LLAMA_COMPILER = \"${build_compiler}\";"
+$ gitecho "char const *LLAMA_BUILD_TARGET = \"${build_target}\";"
